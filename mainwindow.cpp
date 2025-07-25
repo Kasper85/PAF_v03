@@ -11,7 +11,7 @@
 #include "reservaequipo.h"
 #include "registrartrabajador.h"
 
-MainWindow::MainWindow(QWidget *parent) :
+MainWindow::MainWindow(Trabajador *tra, QWidget *parent) :
     QMainWindow(parent),
     ui(new Ui::MainWindow)
 {
@@ -21,11 +21,29 @@ MainWindow::MainWindow(QWidget *parent) :
                         "background-image:url(:/Recursos/Fondo.jpg); "
                         "background-position:center;");
     this->showMaximized(); // mostrar ventana maximizada
+    asignarPermisos(tra);
 }
 
 MainWindow::~MainWindow()
 {
     delete ui;
+}
+
+void MainWindow::asignarPermisos(Trabajador *tra)
+{
+    switch (tra->getNivel()) {
+    case 1:
+        // Admin, all access
+        break;
+    case 2:
+        // Encargado, limited access
+        ui->actionRegistrar_Trabajador->setEnabled(false);
+        ui->actionRegistrar_facultades->setEnabled(false);
+        ui->actionRegistrar_laboratorio->setEnabled(false);
+        ui->actionRegistrar_Docente->setEnabled(false);
+        ui->actionRegistrar_Estudiante->setEnabled(false);
+        break;
+    }
 }
 
 void MainWindow::on_actionRegistrar_facultades_triggered()
