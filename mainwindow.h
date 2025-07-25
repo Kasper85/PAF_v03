@@ -1,6 +1,7 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 #include "universidad.h"
+#include "trabajador.h"
 
 #include <QMainWindow>
 
@@ -13,8 +14,9 @@ class MainWindow : public QMainWindow
     Q_OBJECT
 
 public:
-    explicit MainWindow(QWidget *parent = 0);
+    explicit MainWindow(Trabajador *tra, QWidget *parent = 0);
     ~MainWindow();
+    void asignarPermisos(Trabajador *tra);
 
 private slots:
     void on_actionRegistrar_facultades_triggered();

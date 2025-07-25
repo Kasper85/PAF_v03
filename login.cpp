@@ -71,8 +71,7 @@ void Login::on_BtnIngresar_clicked()
           qm->exec();
     }else{
         this->close();
-        MainWindow *mw = new MainWindow();
-        //asignarPermisos(  );
+        MainWindow *mw = new MainWindow(tra);
         mw->show();
     }
 
@@ -81,6 +80,7 @@ ListaTrabajadores *Login::getLTra() const
 {
     return lTra;
 }
+
 
 void Login::setLTra(ListaTrabajadores *value)
 {
