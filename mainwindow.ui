@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>990</width>
+    <height>358</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralWidget"/>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>990</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menuFacultades">
+    <property name="title">
+     <string>Facultades</string>
+    </property>
+    <addaction name="actionRegistrar_facultades"/>
+   </widget>
+   <widget class="QMenu" name="menuInsumos">
+    <property name="title">
+     <string>Insumos</string>
+    </property>
+    <addaction name="actionRegistrar_Insumos"/>
+    <addaction name="actionListar_Insumos"/>
+   </widget>
+   <widget class="QMenu" name="menuEquipos">
+    <property name="title">
+     <string>Equipos</string>
+    </property>
+    <addaction name="actionRegistrar_Equipos"/>
+   </widget>
+   <widget class="QMenu" name="menuLaboratorios">
+    <property name="title">
+     <string>Laboratorios</string>
+    </property>
+    <addaction name="actionRegistrar_laboratorio"/>
+   </widget>
+   <widget class="QMenu" name="menuEstudiante">
+    <property name="title">
+     <string>Estudiante</string>
+    </property>
+    <addaction name="actionRegistrar_Estudiante"/>
+   </widget>
+   <widget class="QMenu" name="menuDocente">
+    <property name="title">
+     <string>Docente</string>
+    </property>
+    <addaction name="actionRegistrar_Docente"/>
+   </widget>
+   <widget class="QMenu" name="menuTrabajador">
+    <property name="title">
+     <string>Trabajador</string>
+    </property>
+    <addaction name="actionRegistrar_Trabajador"/>
+   </widget>
+   <widget class="QMenu" name="menuPrestamos">
+    <property name="title">
+     <string>Prestamos</string>
+    </property>
+    <addaction name="actionRegistrar_Prestamos"/>
+    <addaction name="actionListar_Prestamos"/>
+   </widget>
+   <widget class="QMenu" name="menuReservas">
+    <property name="title">
+     <string>Reservas</string>
+    </property>
+    <addaction name="actionReserva_equipo"/>
+   </widget>
+   <widget class="QMenu" name="menuCompras">
+    <property name="title">
+     <string>Compras</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuMantenimientos">
+    <property name="title">
+     <string>Mantenimientos</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuReportes">
+    <property name="title">
+     <string>Reportes</string>
+    </property>
+   </widget>
+   <addaction name="menuEstudiante"/>
+   <addaction name="menuDocente"/>
+   <addaction name="menuTrabajador"/>
+   <addaction name="menuPrestamos"/>
+   <addaction name="menuFacultades"/>
+   <addaction name="menuLaboratorios"/>
+   <addaction name="menuInsumos"/>
+   <addaction name="menuEquipos"/>
+   <addaction name="menuCompras"/>
+   <addaction name="menuReservas"/>
+   <addaction name="menuMantenimientos"/>
+   <addaction name="menuReportes"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionRegistrar_facultades">
+   <property name="text">
+    <string>Registrar Facultades</string>
+   </property>
+  </action>
+  <action name="actionRegistrar_Insumos">
+   <property name="text">
+    <string>Registrar Insumos</string>
+   </property>
+  </action>
+  <action name="actionRegistrar_Equipos">
+   <property name="text">
+    <string>Registrar Equipos</string>
+   </property>
+  </action>
+  <action name="actionRegistrar_laboratorio">
+   <property name="text">
+    <string>Registrar Laboratorio</string>
+   </property>
+  </action>
+  <action name="actionListar_Insumos">
+   <property name="text">
+    <string>Listar Insumos</string>
+   </property>
+  </action>
+  <action name="actionRegistrar_Estudiante">
+   <property name="text">
+    <string>Registrar Estudiante</string>
+   </property>
+  </action>
+  <action name="actionRegistrar_Docente">
+   <property name="text">
+    <string>Registrar Docente</string>
+   </property>
+  </action>
+  <action name="actionRegistrar_Trabajador">
+   <property name="text">
+    <string>Registrar Trabajador</string>
+   </property>
+  </action>
+  <action name="actionRegistrar_Prestamos">
+   <property name="text">
+    <string>Registrar Prestamos</string>
+   </property>
+  </action>
+  <action name="actionListar_Prestamos">
+   <property name="text">
+    <string>Listar Prestamos</string>
+   </property>
+  </action>
+  <action name="actionReserva_equipo">
+   <property name="text">
+    <string>Reserva equipo</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
